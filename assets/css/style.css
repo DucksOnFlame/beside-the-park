@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML */
+html {
+  font-family: Tahoma,Verdana,sans-serif;
+  line-height: 2;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+
+p {
+  margin: 1em 0;
+}
+
+/* NAVIGATION BAR */
+nav {
+  background-image: url("../img/web/Web_0002_top-bar.png");
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+#navbar {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  list-style-type: none;
+}
+
+.button {
+  margin-right: 60px;
+}
+
+header {
+  font-weight: bold;
+  color: #9ACD32;
+  font-size: 2.2em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: inline;
+  position: absolute;
+}
+
+
+/* MAIN (FIRST PARAGRAPH, COLUMNS, IPHONE, BOXES) */
+main, #summary-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* First paragraph background (forrest) */
+#front-summary {
+  color: #f2f2f2;
+  background-image: url("../img/web/Web_0008_Layer-5.png");
+  background-color: #9ACD32;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 100%;
+  min-width: 1200px;
+  height: 52vw;
+  border-bottom: 3px solid #9ACD32;
+  display: flex;
+  align-items: center;
+}
+
+/* First paragraph container */
+#front-summary div div {
+  width: 500px;
+}
+
+/* First paragraph header */
+h1 {
+  font-size: 2em;
+}
+
+/* 2 column layout for middle text */
+#lorem-ipsum {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+/* Columns */
+.column {
+  width: 50%;
+}
+
+/* 2nd column (for vertical alignment) */
+#column2 {
+  margin-top: 155px;
+}
+
+/* Margin between columns */
+#lorem-ipsum div:first-child {
+  margin-right: 20px;
+}
+
+/* First column header */
+h2 {
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+/* Column text (without the header) */
+#lorem-ipsum p {
+  color: #adadad;
+}
+
+/* iPhone image */
+#iphone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, -85%);
+}
+
+/* BOTTOM BOXES */
+#boxes section {
+  color: #f2f2f2;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+/* Box headers */
+h3 {
+  font-size: 2.2em;
+  font-weight: normal;
+  background-color: red;
+}
+
+.boxtext p {
+  margin: 0;
+  background-color: yellow;
+}
+
+/* Box footer links */
+.boxlink {
+  display: inline;
+}
+
+.boxlink a {
+  font-weight: bold;
+  display: inline;
+  color: #f2f2f2;
+  text-decoration: none;
+  background-color: blue;
+}
+
+.boxlink a:hover {
+  text-decoration: underline;
+}
+
+/* Below: further box configuration, size, backgrounds */
+#boxes {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#boxes section:nth-child(2n-1) {
+  width: 700px;
+  padding: 50px 50px 100px 50px;
+  height: 128px;
+}
+
+#boxes section:nth-child(2n) {
+  width: 300px;
+  padding: 50px 50px 100px 50px;
+  height: 128px;
+}
+
+#boxes section:nth-child(1) {
+  background-image: url("../img/web/Web_0006_Rectangle-2.png");
+}
+
+#boxes section:nth-child(2) {
+  background-image: url("../img/web/Web_0003_Rectangle-2.png");
+}
+
+#boxes section:nth-child(3) {
+  background-image: url("../img/web/Web_0004_Rectangle-2.png");
+}
+
+#boxes section:nth-child(4) {
+  background-image: url("../img/web/Web_0005_Rectangle-2.png");
+}
