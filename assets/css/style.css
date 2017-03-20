@@ -85,18 +85,20 @@ h1 {
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   margin-top: 100px;
 }
 
 /* Columns */
 .column {
   width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
 }
 
-/* 2nd column (for vertical alignment) */
 #column2 {
-  margin-top: 155px;
+  margin-top: 11.5em;
 }
 
 /* Margin between columns */
@@ -110,11 +112,6 @@ h2 {
   font-weight: lighter;
 }
 
-/* Column text (without the header) */
-#lorem-ipsum p {
-  color: #adadad;
-}
-
 /* iPhone image */
 #iphone {
   position: absolute;
@@ -123,9 +120,16 @@ h2 {
   transform: translate(0, -85%);
 }
 
+/* Column text (without the header) */
+#lorem-ipsum p {
+  color: #adadad;
+  line-height: 1.5;
+}
+
 /* BOTTOM BOXES */
 #boxes section {
   color: #f2f2f2;
+  position: relative;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -135,17 +139,22 @@ h2 {
 h3 {
   font-size: 2.2em;
   font-weight: normal;
-  background-color: red;
+}
+
+.boxtext {
+  margin-top: 30px;
 }
 
 .boxtext p {
   margin: 0;
-  background-color: yellow;
 }
 
 /* Box footer links */
 .boxlink {
-  display: inline;
+  position: absolute;
+  bottom: 0px;
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 .boxlink a {
@@ -153,7 +162,6 @@ h3 {
   display: inline;
   color: #f2f2f2;
   text-decoration: none;
-  background-color: blue;
 }
 
 .boxlink a:hover {
@@ -168,14 +176,14 @@ h3 {
 
 #boxes section:nth-child(2n-1) {
   width: 700px;
-  padding: 50px 50px 100px 50px;
-  height: 128px;
+  padding: 0px 50px 100px 50px;
+  height: 178px;
 }
 
 #boxes section:nth-child(2n) {
   width: 300px;
-  padding: 50px 50px 100px 50px;
-  height: 128px;
+  padding: 0px 50px 100px 50px;
+  height: 178px;
 }
 
 #boxes section:nth-child(1) {
