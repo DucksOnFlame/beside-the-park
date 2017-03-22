@@ -1,3 +1,4 @@
+/* REMOVE MARGIN AND PADDING FROM ALL ELEMENTS */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ html {
   margin-bottom: 100px;
 }
 
+/* StANDARD p MARGIN */
 p {
   margin: 1em 0;
 }
@@ -25,7 +27,7 @@ nav {
   z-index: 1;
 }
 
-#navbar {
+#c-navbar-list {
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -33,7 +35,7 @@ nav {
   list-style-type: none;
 }
 
-.button {
+.c-navbar-list__button {
   margin-right: 60px;
 }
 
@@ -50,13 +52,13 @@ header {
 
 
 /* MAIN (FIRST PARAGRAPH, COLUMNS, IPHONE, BOXES) */
-main, #summary-container {
+main, #js-summary__text-container {
   width: 1200px;
   margin: 0 auto;
 }
 
 /* First paragraph background (forrest) */
-#front-summary {
+#js-summary {
   color: #f2f2f2;
   background-image: url("../img/web/Web_0008_Layer-5.png");
   background-color: #9ACD32;
@@ -71,7 +73,7 @@ main, #summary-container {
 }
 
 /* First paragraph container */
-#front-summary div div {
+#js-summary__text-container div {
   width: 500px;
 }
 
@@ -81,7 +83,7 @@ h1 {
 }
 
 /* 2 column layout for middle text */
-#lorem-ipsum {
+#c-main-text {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -90,19 +92,19 @@ h1 {
 }
 
 /* Columns */
-.column {
+.c-main-text__column {
   width: 50%;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
 }
 
-#column2 {
+#u-main-text__column--right {
   margin-top: 11.5em;
 }
 
 /* Margin between columns */
-#lorem-ipsum div:first-child {
+#c-main-text div:first-child {
   margin-right: 20px;
 }
 
@@ -113,7 +115,7 @@ h2 {
 }
 
 /* iPhone image */
-#iphone {
+#c-iphone {
   position: absolute;
   top: 0;
   right: 0;
@@ -121,13 +123,13 @@ h2 {
 }
 
 /* Column text (without the header) */
-#lorem-ipsum p {
+#c-main-text p {
   color: #adadad;
   line-height: 1.5;
 }
 
 /* BOTTOM BOXES */
-#boxes section {
+#c-bottom-boxes section {
   color: #f2f2f2;
   position: relative;
   display: flex;
@@ -141,63 +143,63 @@ h3 {
   font-weight: normal;
 }
 
-.boxtext {
+.c-bottom-boxes__text {
   margin-top: 30px;
 }
 
-.boxtext p {
+.c-bottom-boxes__text p {
   margin: 0;
 }
 
 /* Box footer links */
-.boxlink {
+.c-bottom-boxes__link {
   position: absolute;
   bottom: 0px;
   padding: 0;
   margin-bottom: 50px;
 }
 
-.boxlink a {
+.c-bottom-boxes__link a {
   font-weight: bold;
   display: inline;
   color: #f2f2f2;
   text-decoration: none;
 }
 
-.boxlink a:hover {
+.c-bottom-boxes__link a:hover {
   text-decoration: underline;
 }
 
 /* Below: further box configuration, size, backgrounds */
-#boxes {
+#c-bottom-boxes {
   display: flex;
   flex-flow: row wrap;
 }
 
-#boxes section:nth-child(2n-1) {
+#c-bottom-boxes section:nth-child(2n-1) {
   width: 700px;
   padding: 0px 50px 100px 50px;
   height: 178px;
 }
 
-#boxes section:nth-child(2n) {
+#c-bottom-boxes section:nth-child(2n) {
   width: 300px;
   padding: 0px 50px 100px 50px;
   height: 178px;
 }
 
-#boxes section:nth-child(1) {
+#c-bottom-boxes section:nth-child(1) {
   background-image: url("../img/web/Web_0006_Rectangle-2.png");
 }
 
-#boxes section:nth-child(2) {
+#c-bottom-boxes section:nth-child(2) {
   background-image: url("../img/web/Web_0003_Rectangle-2.png");
 }
 
-#boxes section:nth-child(3) {
+#c-bottom-boxes section:nth-child(3) {
   background-image: url("../img/web/Web_0004_Rectangle-2.png");
 }
 
-#boxes section:nth-child(4) {
+#c-bottom-boxes section:nth-child(4) {
   background-image: url("../img/web/Web_0005_Rectangle-2.png");
 }
