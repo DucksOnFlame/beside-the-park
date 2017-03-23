@@ -9,7 +9,6 @@ html {
   font-family: Tahoma,Helvetica,Verdana,sans-serif;
   line-height: 2;
   font-size: 14px;
-  font-size: 1vw;
   margin-bottom: 10vw;
 }
 
@@ -74,7 +73,6 @@ main, #js-summary__text-container {
 #js-summary {
   color: #f2f2f2;
   background-image: url("../img/web/Web_0008_Layer-5.png");
-  background-color: #9ACD32;
   background-position: center;
   background-size: 100% 100%;
   width: 100%;
@@ -113,7 +111,7 @@ h1 {
 }
 
 #u-main-text__column--right {
-  margin-top: 11.5em;
+  margin-top: 159px;
 }
 
 /* Margin between columns */
@@ -155,6 +153,7 @@ h2 {
 h3 {
   font-size: 2.2em;
   font-weight: normal;
+  padding-bottom: 2%;
 }
 
 .c-bottom-boxes__text p {
@@ -163,13 +162,12 @@ h3 {
 
 /* Box footer links */
 .c-bottom-boxes__link {
-  background-color: red;
   bottom: 0px;
-  padding-bottom: 4.16666666666667%;
+  padding-bottom: 0;
 }
 
 .c-bottom-boxes__link--even {
-  padding-bottom: 10%;
+  padding-bottom: 0;
 }
 
 .c-bottom-boxes__link a {
@@ -223,9 +221,9 @@ h3 {
   background-image: url("../img/web/Web_0005_Rectangle-2.png");
 }
 
-/* FOR SMALLER SCREEN SIZES
-  Change layout to 1 column */
-@media screen and (max-width: 1320px) {
+/* FOR SMALLER SCREEN SIZES OR RESIZED WINDOWS
+Change layout to 1 column and scale */
+@media screen and (max-width: 1320px), screen and (-webkit-device-pixel-ratio:3) {
   html {
     line-height: 1.5;
   }
@@ -237,15 +235,20 @@ h3 {
 
   #js-summary__text-container div {
     padding-left: 5%;
-    width: 60%;
+    width: 50%;
   }
 
   #c-iphone {
-    transform: translate(-10%, -80%);
+    transform: translate(-10%, -85%);
   }
 
   #c-main-text {
     flex-direction: column;
+    font-size: 100%;
+  }
+
+  h2 {
+    font-size: 150%;
   }
 
   .c-main-text__column {
@@ -267,22 +270,75 @@ h3 {
 
   #c-bottom-boxes section:nth-child(n) {
     width: 90%;
+    max-width: 90%;
     padding: 5%;
     margin: 0;
     height: auto;
   }
 
-  .c-bottom-boxes__link--even {
-    padding-bottom: 4.16666666666667%;
+  .c-bottom-boxes__link {
+    line-height: 2;
   }
+
 }
 
+/* Below 800px set minimum font size and remove navbar buttons */
 @media screen and (max-width: 800px) {
-  html {
-    font-size: 8px;
+
+  #c-main-text {
+    flex-direction: column;
+    font-size: 5vw;
+  }
+
+  header {
+    font-size: 20px;
   }
 
   #c-navbar-list {
     display: none;
+  }
+}
+
+/* For iPad mini, iPad Air Retina and Google Nexus 7 */
+@media screen and (min-height: 960px) and (max-height: 1024px) {
+
+  #c-main-text {
+    font-size: 130%;
+  }
+}
+
+/* Load mobile images for mobile devices, scale text, hide navbar buttons */
+@media screen and (-webkit-min-device-pixel-ratio:3) {
+
+  html {
+    font-size: 100%;
+  }
+
+  header {
+    font-size: 30px;
+  }
+
+  #js-summary__text-container div {
+    font-size: 80%;
+  }
+
+  #c-bottom-boxes {
+    font-size: 50%;
+  }
+
+  #c-navbar-list {
+    display: none;
+  }
+
+}
+
+/* For Google Nexus 10 */
+@media screen and (width: 800px) and (height: 1280px){
+  #c-main-text {
+    font-size: 3vw;
+  }
+
+  html {
+    font-size: 120%;
   }
 }
